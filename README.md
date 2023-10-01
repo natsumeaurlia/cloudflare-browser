@@ -11,4 +11,7 @@ bun install
 # HMR dev
 bun dev
 
+# use wrangler dev
+bun wrangler dev
+
 ```

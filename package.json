@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "wrangler:dev": "wrangler dev src/index.ts",
+    "wdev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
