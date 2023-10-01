@@ -2,7 +2,11 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "wrangler:dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "format": "prettier --write src",
+    "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {
     "@cloudflare/puppeteer": "^0.0.5",
@@ -10,6 +14,14 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230922.0",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
     "wrangler": "^3.9.0"
   }
 }
