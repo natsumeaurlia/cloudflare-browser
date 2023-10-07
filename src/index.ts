@@ -3,7 +3,6 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { zValidator } from '@hono/zod-validator'
 import { nanoid } from 'nanoid'
-import { Buffer } from 'node:buffer';
 
 type Bindings = {
     MYBROWSER: Fetcher
